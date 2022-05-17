@@ -8,7 +8,6 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
@@ -38,7 +37,7 @@ const ProductList = () => {
               <>
                 {productLists.map((item) => {
                   return (
-                    <Grid key={item.id} item xs={3}>
+                    <Grid key={item.id} item xs={12} sm={3} lg={3}>
                       <Card style={{ height: "400px" }}>
                         {/* <CardHeader
                           avatar={
